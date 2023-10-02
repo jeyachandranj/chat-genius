@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import { BsEmojiSmileFill } from "react-icons/bs";
+import { FcViewDetails } from "react-icons/fc";
+import { FcServiceMark } from "react-icons/fc";
+import { FcSurvey } from "react-icons/fc";
+import { CiText} from "react-icons/ci";
 import { IoMdSend } from "react-icons/io";
 import styled from "styled-components";
 import Picker from "emoji-picker-react";
@@ -33,16 +37,16 @@ export default function ChatInput({ handleSendMsg }) {
           {showEmojiPicker && <Picker onEmojiClick={handleEmojiClick} />}
         </div>
         <div className="emoji">
-          <BsEmojiSmileFill />
+          <FcViewDetails />
         </div>
         <div className="emoji">
-          <BsEmojiSmileFill />
+          <CiText />
         </div>
         <div className="emoji">
-          <BsEmojiSmileFill />
+          <FcServiceMark />
         </div>
         <div className="emoji">
-          <BsEmojiSmileFill />
+          <FcSurvey />
         </div>
       </div>
       <div style={{"padding-left":"150px"}}>
