@@ -32,7 +32,20 @@ export default function ChatInput({ handleSendMsg }) {
           <BsEmojiSmileFill onClick={handleEmojiPickerhideShow} />
           {showEmojiPicker && <Picker onEmojiClick={handleEmojiClick} />}
         </div>
+        <div className="emoji">
+          <BsEmojiSmileFill />
+        </div>
+        <div className="emoji">
+          <BsEmojiSmileFill />
+        </div>
+        <div className="emoji">
+          <BsEmojiSmileFill />
+        </div>
+        <div className="emoji">
+          <BsEmojiSmileFill />
+        </div>
       </div>
+      <div style={{"padding-left":"150px"}}>
       <form className="input-container" onSubmit={(event) => sendChat(event)}>
         <input
           type="text"
@@ -44,6 +57,7 @@ export default function ChatInput({ handleSendMsg }) {
           <IoMdSend />
         </button>
       </form>
+      </div>
     </Container>
   );
 }
